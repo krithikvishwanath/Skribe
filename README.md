@@ -2,7 +2,7 @@
 
 *HackMIT Healthcare Track 2025*
 
-An intelligent multi-agent system that automates clinical documentation, generates SOAP notes, and enhances patient communication - giving physicians their time back while improving healthcare delivery.
+An intelligent multi-agent system that automates clinical documentation, generates SOAP notes, and enhances patient communication giving physicians their time back while improving healthcare delivery.
 
 ## 🏥 The Problem We're Solving
 
@@ -42,7 +42,7 @@ Scribe transforms clinical workflows through a sophisticated multi-agent AI syst
 ### Core Infrastructure
 - **Frontend**: Next.js 14, React, TypeScript, Tailwind CSS
 - **Backend**: FastAPI, Python, WebSockets
-- **Database**: SQLite (demo), PostgreSQL (production)
+- **Database**: SQLite (demo)
 - **AI Services**: OpenAI GPT-4, Whisper API
 
 - ## 🚀 Quick Start
