@@ -45,6 +45,38 @@ Scribe transforms clinical workflows through a sophisticated multi-agent AI syst
 - **Database**: SQLite (demo), PostgreSQL (production)
 - **AI Services**: OpenAI GPT-4, Whisper API
 
+- ## 🚀 Quick Start
+
+### Prerequisites
+- Node.js 18+ and npm/yarn
+- Python 3.9+
+- OpenAI API key
+
+### One-Command Setup
+
+1. **Start everything with the demo script**
+   ```bash
+   # Make the script executable (first time only)
+   chmod +x start.sh
+   
+   # Start both backend and frontend
+   ./start.sh
+   ```
+
+2. **Set your OpenAI API key**
+   ```bash
+   # Edit the backend environment file
+   nano backend/.env
+   
+   # Add your OpenAI API key:
+   OPENAI_API_KEY=your_openai_api_key_here
+   ```
+
+3. **Access the application**
+   - Frontend: http://localhost:3000
+   - Backend API: http://localhost:8000
+   - API Documentation: http://localhost:8000/docs
+
 ### Sponsor Technologies
 - **🌊 Windsurf**: Development environment and real-time collaboration
 - **🤖 Claude**: Advanced medical reasoning and SOAP note generation
