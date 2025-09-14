@@ -156,43 +156,7 @@ export default function NewSession() {
             </Button>
           </form>
 
-          {/* Feature Highlights */}
-          <div className="mt-8 pt-8 border-t border-gray-700/50">
-            <h3 className="text-lg font-semibold text-white mb-4">Session Features</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
-                <div>
-                  <p className="text-sm font-medium text-gray-200">Real-time Transcription</p>
-                  <p className="text-xs text-gray-400">Live audio-to-text conversion with OpenAI Whisper</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                <div>
-                  <p className="text-sm font-medium text-gray-200">SOAP Note Generation</p>
-                  <p className="text-xs text-gray-400">Automated clinical documentation</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
-                <div>
-                  <p className="text-sm font-medium text-gray-200">Patient Summary</p>
-                  <p className="text-xs text-gray-400">Plain English summary with QR code</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
-                <div>
-                  <p className="text-sm font-medium text-gray-200">Compliance Check</p>
-                  <p className="text-xs text-gray-400">AI-powered completeness validation</p>
-                </div>
-              </div>
-            </div>
-          </div>
+        
         </motion.div>
       </div>
     </div>
