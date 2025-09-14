@@ -24,7 +24,7 @@ Scribe transforms clinical workflows through a sophisticated multi-agent AI syst
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │  Audio Agent    │    │ Clinical Agent  │    │ Patient Agent   │
-│  (Wispr + AI)   │────│ (Claude + Med   │────│ (Communication │
+│  (Whiper)       │────│ (Claude + Med   │────│ (Communication │
 │                 │    │  Knowledge)     │    │  + Scheduling)  │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
          │                       │                       │
