@@ -1,60 +1,26 @@
-# Scribe: AI-Powered Clinical Documentation & Patient Experience Enhancement
-## HackMIT Healthcare Track Presentation
+# Scribe - AI-Powered Clinical Documentation & Patient Experience Platform
 
-### Project Overview
-Scribe is an automated AI agent designed to handle mundane clinical tasks such as transcription, SOAP note generation, and patient communication, with a strong emphasis on enhancing patient user experience while giving physicians their time back.
+*HackMIT Healthcare Track 2025*
 
----
+An intelligent multi-agent system that automates clinical documentation, generates SOAP notes, and enhances patient communication - giving physicians their time back while improving healthcare delivery.
 
-## Presentation Structure
+## 🏥 The Problem We're Solving
 
-### 1. Opening: Clinical Relevance (3-4 minutes)
+Healthcare providers spend **60-70% of their time** on administrative tasks, with doctors averaging **2-3 hours daily** on transcription and documentation. This $30B+ annual burden reduces patient face-time, increases physician burnout, and degrades the overall healthcare experience.
 
-#### The Problem
-- **Time Burden**: Physicians spend 60-70% of their time on administrative tasks
-- **Documentation Overhead**: Average 2-3 hours per day on transcription and note-taking  
-- **Patient Impact**: Reduced face-to-face time, delayed care, physician burnout
-- **Cost**: $30B+ annually in administrative costs across US healthcare
+**Hospital Validation**: We spoke directly with Chiefs of IT at major regional hospitals who confirmed this is their #1 operational pain point and are actively seeking solutions like Scribe for integration.
 
-#### Current Solutions Fall Short
-- Manual transcription services: Expensive, slow, error-prone
-- Basic voice-to-text: Lacks medical context and SOAP formatting
-- EHR systems: Clunky interfaces that increase documentation time
+## 🎯 Our Solution
 
-#### Hospital IT Leadership Validation
-**We spoke directly with Chiefs of IT at major regional hospitals who confirmed:**
-- They are actively seeking solutions like Scribe for integration
-- Current documentation workflows are their #1 operational pain point
-- They have budget allocated for AI-powered clinical automation tools
-- Ready to pilot innovative solutions that can demonstrate ROI
+Scribe transforms clinical workflows through a sophisticated multi-agent AI system that:
+- **Transcribes conversations** in real-time with medical context
+- **Generates structured SOAP notes** automatically
+- **Handles patient communication** and follow-up scheduling
+- **Ensures HIPAA compliance** throughout the process
+- **Integrates with existing EHR systems** seamlessly
 
-#### Our Vision
-Scribe transforms clinical workflows through intelligent automation, giving doctors their time back while enhancing patient experience.
+## 🏗️ Multi-Agent Architecture
 
----
-
-### 2. Live Demo with Audience (5-6 minutes)
-
-#### Interactive Scenario Setup
-"Let's simulate a real patient encounter. I need a volunteer to play a patient with a common complaint - let's say a follow-up for diabetes management."
-
-#### Demo Flow
-1. **Real-time Transcription**: Show Wispr capturing conversation
-2. **SOAP Generation**: Watch Scribe automatically structure clinical notes
-3. **Patient Communication**: Generate personalized follow-up email
-4. **Task Automation**: Schedule follow-up, update medication list
-5. **Compliance Check**: Eigencloud ensures HIPAA compliance
-
-#### Audience Engagement
-- "What questions would you ask this patient?"
-- "What follow-up actions should happen?"
-- Show how Scribe anticipates and automates these decisions
-
----
-
-### 3. Technical Framework: Multi-Agent Architecture (4-5 minutes)
-
-#### Core Multi-Agent System (Powered by Toolhouse)
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │  Audio Agent    │    │ Clinical Agent  │    │ Patient Agent   │
@@ -71,149 +37,156 @@ Scribe transforms clinical workflows through intelligent automation, giving doct
                     └─────────────────┘
 ```
 
-#### Sponsor Technology Integration
-- **Windsurf**: Development environment and real-time collaboration
-- **Claude**: Advanced medical reasoning and SOAP note generation
-- **Wispr**: High-accuracy medical speech recognition (Recording tomorrow morning)
-- **Toolhouse**: Multi-agent workflow orchestration
-- **Knot**: Inter-agent communication protocol (used in Toolhouse agent)
-- **Rox**: Performance monitoring and optimization
-- **YC**: Validation and market precedent
-- **Eigencloud**: Healthcare compliance and security categories
-- **Tandemnn**: EHR integration API
-- **Toolhouse MCP Automation**: Automation protocols
-- **Modal**: Scalable cloud infrastructure
+## 🛠️ Technology Stack & Sponsors
 
----
+### Core Infrastructure
+- **Frontend**: Next.js 14, React, TypeScript, Tailwind CSS
+- **Backend**: FastAPI, Python, WebSockets
+- **Database**: SQLite (demo), PostgreSQL (production)
+- **AI Services**: OpenAI GPT-4, Whisper API
 
-### 4. Market Validation & Precedent (2 minutes)
+### Sponsor Technologies
+- **🌊 Windsurf**: Development environment and real-time collaboration
+- **🤖 Claude**: Advanced medical reasoning and SOAP note generation
+- **🎤 Wispr**: High-accuracy medical speech recognition
+- **🔧 Toolhouse**: Multi-agent workflow orchestration
+- **🔗 Knot**: Inter-agent communication protocol
+- **📊 Rox**: Performance monitoring and optimization
+- **☁️ Eigencloud**: Healthcare compliance and security categories
+- **🔌 Tandemnn**: EHR integration API
+- **⚡ Modal**: Scalable cloud infrastructure
+- **🤖 Toolhouse MCP**: Automation protocols
 
-#### YC Success Story: Sully.ai (YC S21)
-- Developed AI "medical employees" for clinical documentation
-- Raised significant funding pre-2022
-- Validated market demand for automated clinical workflows
-- **Key Learning**: Focus on specific clinical tasks rather than general AI
+## 🚀 Quick Start
 
-#### Market Opportunity
-- $4.6B clinical documentation market
-- 800,000+ physicians in US spending 2+ hours daily on notes
-- Growing telehealth adoption increases documentation needs
+### Prerequisites
+- Node.js 18+ and npm/yarn
+- Python 3.9+
+- OpenAI API key
 
----
+### One-Command Setup
+```bash
+# Make executable and start everything
+chmod +x start.sh
+./start.sh
+```
 
-### 5. Competitive Advantage & Impact (2-3 minutes)
+### Configuration
+```bash
+# Backend environment
+cd backend
+cp env.example .env
+# Add your OpenAI API key to .env
 
-#### What Makes Scribe Different
+# Frontend environment  
+cd frontend
+cp env.example .env.local
+```
+
+### Access Points
+- **Frontend**: http://localhost:3000
+- **Backend API**: http://localhost:8000
+- **API Docs**: http://localhost:8000/docs
+
+## 📊 Market Validation
+
+### Industry Precedent
+**Sully.ai (YC S21)** successfully validated this market by developing AI "medical employees" for clinical documentation, raising significant funding pre-2022 and demonstrating strong demand for automated clinical workflows.
+
+### Market Opportunity
+- **$4.6B** clinical documentation market
+- **800,000+** US physicians spending 2+ hours daily on notes
+- **Growing telehealth** adoption increases documentation needs
+- **Hospital buy-in** confirmed through direct IT leadership conversations
+
+## 🎯 Key Features
+
+### Real-Time Clinical Documentation
+- Live transcription with medical context understanding
+- Automated SOAP note generation with proper formatting
+- Integration with existing EHR systems via API
+- HIPAA-compliant data handling and storage
+
+### Patient Experience Enhancement
+- Automated follow-up email generation
+- Appointment scheduling and medication reminders
+- QR code sharing for patient access to summaries
+- Plain English explanations of medical information
+
+### Compliance & Quality Assurance
+- Built-in HIPAA compliance monitoring
+- Audit trail capabilities for all interactions
+- Quality checks for complete documentation
+- Regulatory compliance category management
+
+## 📈 Impact Metrics
+
+### Quantifiable Benefits
+- **Time Savings**: 2-3 hours per physician per day
+- **Cost Reduction**: 40-60% decrease in documentation overhead
+- **Quality Improvement**: Standardized, complete clinical notes
+- **Patient Satisfaction**: Increased face-time and better communication
+
+### Competitive Advantages
 - **Patient-Centric**: Focus on UX, not just physician efficiency
 - **Multi-Agent Intelligence**: Specialized agents for different tasks
 - **Compliance-First**: Built-in HIPAA and regulatory compliance
-- **EHR Agnostic**: Works with existing systems via Tandemnn API
-- **Hospital-Validated**: Direct feedback from IT leadership at major regional hospitals
+- **EHR Agnostic**: Works with existing systems
+- **Hospital-Validated**: Direct feedback from IT leadership
 
-#### Measurable Impact
-- **Time Savings**: 2-3 hours per physician per day
-- **Cost Reduction**: 40-60% decrease in documentation costs
-- **Quality Improvement**: Standardized, complete clinical notes
-- **Patient Satisfaction**: More face-time, better communication
+## 🏗️ Project Structure
 
----
+```
+frontend/                 # Next.js application
+├── app/                 # App router pages
+│   ├── dashboard/       # Main dashboard
+│   ├── patient/         # Patient management
+│   └── session/         # Session handling
+├── components/          # Reusable UI components
+└── lib/                # Utilities and configurations
 
-### 6. Next Steps & Call to Action (1-2 minutes)
+backend/                 # FastAPI application
+├── app/
+│   ├── api/            # API endpoints
+│   │   ├── sessions.py # Session management
+│   │   └── qr_codes.py # QR code generation
+│   ├── core/           # Core configuration
+│   ├── models/         # Data models
+│   └── services/       # Business logic
+│       ├── ai_service.py          # AI integration
+│       ├── transcription_service.py # Speech processing
+│       └── websocket_manager.py   # Real-time communication
+```
 
-#### Immediate Roadmap
-- Complete Wispr integration tomorrow morning
-- Deploy multi-agent workflow via Toolhouse
-- Beta test with regional hospital partners (IT chiefs already committed)
-- Scale through Modal infrastructure
+## 🔄 Demo Workflow
 
-#### Partnership Opportunities
-- Healthcare systems for pilot programs (leads identified)
+1. **Session Creation**: Generate QR code for patient access
+2. **Live Transcription**: Real-time speech-to-text with medical context
+3. **SOAP Generation**: Automated structured note creation
+4. **Patient Communication**: Generate follow-up emails and summaries
+5. **Compliance Check**: Verify completeness and regulatory adherence
+6. **EHR Integration**: Seamless data transfer to existing systems
+
+## 🚀 Next Steps
+
+### Immediate Roadmap
+- Complete Wispr integration for enhanced speech recognition
+- Deploy full multi-agent workflow via Toolhouse
+- Beta test with regional hospital partners (IT chiefs committed)
+- Scale infrastructure through Modal cloud platform
+
+### Partnership Opportunities
+- Healthcare systems for pilot programs
 - EHR vendors for deeper integration
 - Compliance partners for regulatory approval
 - Investors for scaling operations
 
----
+## 🏆 HackMIT Healthcare Track
 
-## Presentation Execution Notes
+Scribe represents the future of clinical documentation - where technology serves both healthcare providers and patients, reducing administrative burden while improving the quality of care delivery.
 
-### Presentation Tips
-1. **Start Strong**: Open with the 60-70% statistic to grab attention
-2. **Keep Demo Interactive**: Make audience feel involved in the solution
-3. **Technical Depth**: Show sophistication without overwhelming
-4. **End with Vision**: Paint picture of transformed healthcare experience
-
-### Sponsor Completion Status
-- ✅ **Windsurf**: Completed
-- ⏳ **Claude**: Will complete when switching prompt
-- ⏳ **Wispr**: Recording tomorrow morning
-- ⏳ **Toolhouse**: Multi-agent workflow implementation
-- ✅ **Knot**: Used in Toolhouse agent
-- ✅ **Rox**: Completed
-- ✅ **YC**: Market validation research
-- ✅ **Eigencloud**: Compliance categories integration
-- ✅ **Tandemnn**: API integration
-- ✅ **Toolhouse MCP Automation**: Protocols implemented
-- ✅ **Modal**: Infrastructure setup
+**Built by Team Scribe for HackMIT 2025**
 
 ---
 
-## Technical Implementation Details
-
-### Current Architecture
-- **Backend**: FastAPI with SQLAlchemy, WebSocket support
-- **Frontend**: Next.js with TypeScript, Tailwind CSS
-- **Database**: SQLite (development), PostgreSQL (production)
-- **AI Integration**: OpenAI API, custom medical knowledge base
-- **Real-time**: WebSocket connections for live transcription
-
-### Key Features Implemented
-- Session management and QR code generation
-- Real-time transcription service
-- WebSocket manager for live updates
-- Patient dashboard and session tracking
-- SOAP note generation framework
-
-### Compliance & Security
-- HIPAA-compliant data handling
-- Encrypted data transmission
-- Secure session management
-- Audit trail capabilities
-
----
-
-## Market Research & Validation
-
-### Hospital IT Chief Feedback
-Direct conversations with IT leadership at major regional hospitals revealed:
-- **Immediate Need**: All hospitals surveyed prioritize clinical documentation automation
-- **Budget Allocation**: Dedicated funds available for AI-powered solutions
-- **Integration Readiness**: Existing EHR systems can accommodate API-based solutions
-- **Pilot Commitment**: Multiple hospitals expressed interest in beta testing
-
-### Competitive Landscape
-- **Sully.ai (YC S21)**: Validated market with AI medical employees
-- **Current Gap**: Most solutions focus on transcription only, not full workflow automation
-- **Our Advantage**: End-to-end patient experience focus with multi-agent intelligence
-
----
-
-## Project Rationale
-
-### Why Scribe Matters
-1. **Clinical Efficiency**: Doctors spend more time on documentation than patient care
-2. **Patient Experience**: Current systems create barriers to meaningful doctor-patient interaction
-3. **Healthcare Costs**: Administrative burden drives up costs across the entire system
-4. **Technology Readiness**: AI capabilities now mature enough for reliable clinical deployment
-5. **Market Validation**: Hospital leadership actively seeking these solutions
-
-### Success Metrics
-- **Physician Time Saved**: Target 2-3 hours per day
-- **Documentation Quality**: Standardized, complete SOAP notes
-- **Patient Satisfaction**: Improved communication and follow-up
-- **Cost Reduction**: 40-60% decrease in documentation overhead
-- **Adoption Rate**: Pilot program success with regional hospital partners
-
----
-
-*Last Updated: September 14, 2025*
-*HackMIT Healthcare Track - Team Scribe*
+*For detailed setup instructions and demo guide, see [DEMO_GUIDE.md](DEMO_GUIDE.md)*
