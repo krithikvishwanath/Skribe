@@ -517,11 +517,11 @@ export default function SessionPage() {
                             <div>
                               <span className="font-medium text-blue-300">Vital Signs:</span>
                               <div className="ml-4 mt-1">
-                                {Object.entries(sessionData.soap_note.objective.vital_signs).map(([vital, value]) => (
-                                  value && value !== "Not recorded" && (
+                                {Object.entries(sessionData.soap_note.objective.vital_signs as Record<string, string>)
+                                  .filter(([vital, value]) => value && value !== "Not recorded")
+                                  .map(([vital, value]) => (
                                     <p key={vital} className="text-sm">• {vital.replace('_', ' ').replace(/\b\w/g, l => l.toUpperCase())}: {value}</p>
-                                  )
-                                ))}
+                                  ))}
                               </div>
                             </div>
                           )}

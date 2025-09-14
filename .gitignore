@@ -98,3 +98,4 @@ Thumbs.db
 
 # QR codes (temporary)
 qr_codes/
+.vercel
